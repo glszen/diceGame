@@ -21,5 +21,3 @@ A simple Dice Game built using React where the user can change the name of "Play
 - **Images**: Custom dice images (`dice1.png`, `dice2.png`, `dice3.png`, etc.).
 
 
-https://github.com/user-attachments/assets/b216f295-2e38-40c5-afe1-05ce75d369c4
-
