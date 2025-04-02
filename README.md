@@ -1,12 +1,25 @@
-# React + Vite
+# Dice Game - LIVE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://dicegame1g.netlify.app/
 
-Currently, two official plugins are available:
+# Dice Game - React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple Dice Game built using React. Players roll two dice, and the program determines the winner based on the results. The game displays a rolling animation for the dice and reveals the winner after a short delay.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Dice Animation**: The dice images animate as they roll for 2 seconds before revealing the final result.
+- **Game Logic**: Compares the results of two dice rolls (Player 1 vs PC) to determine the winner.
+- **Responsive UI**: Simple layout that works well on different screen sizes.
+
+## Tech Stack
+
+- **React**: JavaScript library for building user interfaces.
+- **CSS**: For styling the components.
+- **Bootstrap** (Optional): For UI components (e.g., buttons, grids).
+- **Images**: Custom dice images (dice1.png, dice2.png, dice3.png, etc.).
+
+
+
+https://github.com/user-attachments/assets/b216f295-2e38-40c5-afe1-05ce75d369c4
+
