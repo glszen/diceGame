@@ -24,6 +24,7 @@ const [image2, setNewImage2] = useState(diceImages[1])
 const [winner, setWinner] = useState("");
 const [message, setMessage] = useState("Welcome Dice Game! 🎲");
 const [rolling, setRolling] = useState(false);
+const [player1Name, setPlayer1Name] = useState("Change Name");
 
 const rollDice = () => {
   setRolling(true);
@@ -46,8 +47,8 @@ const rollDice = () => {
   console.log(randomNum2);
 
   if(randomNum1>randomNum2){
-    setWinner("Player1 Wins! 🏆")
-    setMessage("Player 1 Wins! 🏆 ")
+    setWinner(`${player1Name} Wins! 🏆`)
+    setMessage(`${player1Name} Wins! 🏆 `)
   }else if(randomNum1<randomNum2){
     setWinner("PC Wins! 🏆")
     setMessage("PC Wins! 🏆")
@@ -65,8 +66,17 @@ const rollDice = () => {
     <h1 className='pt-5 draw'>{message}</h1>
     <div className='container pt-5'>
       <div className='row justify-content-center pt-5'>
-      <div className='col-2  text-center ms-5 playerC'>Player 1</div>
-      <div className='col-3 ps-3 playerC'>Player 2</div>
+      <div className='col-2 ps-5 ms-2 playerC'>{player1Name} <input 
+                type="text" 
+                value={player1Name} 
+                onChange={(e) => setPlayer1Name(e.target.value)} 
+                className="form-control" 
+                style={{ textAlign: "center" }}
+              />
+              </div>
+       {/* Input for Player 1 name */}
+       
+      <div className='col-3 ps-5 playerC'>Player 2 (PC) </div>
       </div>  
       <img className='square' src={image}/>
       <div style={{width:'5px', display:'inline-block'}}></div>
